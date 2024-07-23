@@ -5,19 +5,15 @@ import java.util.Scanner;
 public class Question1_ReverseAString {
 	//Logic: use charAt, declare empty string and use reverse for loop
 	public static void main(String args[]) {
+		 reverseString("Shanuja");
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the string: ");
-		String input = sc.nextLine();
-		int size = input.length();
-		String revString = "";
-		for (int i=size-1;i>=0;i--) {
-			
-			revString = revString+input.charAt(i);
+		
+	}
+	public static void reverseString(String s) {
+		String reverse = "";
+		for (int i = s.length()-1; i>=0; i--) {
+			reverse = reverse+s.charAt(i);
 		}
-		
-		System.out.println(revString);
-		
-		
+		System.out.println(reverse);
 	}
 }

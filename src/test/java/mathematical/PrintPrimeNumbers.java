@@ -1,4 +1,4 @@
-package Important_questions;
+package mathematical;
 
 public class PrintPrimeNumbers {
 

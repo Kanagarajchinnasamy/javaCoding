@@ -9,12 +9,12 @@ public class Question2_Swap2StringsWithoutThirdVariable {
 	
 	public static void swap2Strings(String a, String b) {
 		
-		System.out.println("Before swap: "+"value of a= "+a +" value of b= " +b);
-		//HellWorld
-		a=a+b;
-		b= a.substring(0, a.length()-a.length());
-		a=a.substring(b.length());
-		System.out.println("After swap: "+"value of a= "+a +"value of b= " +b);
+	a=a+b;
+	//helloworld
+	b = a.substring(0,a.length()-b.length());
+	a=a.substring(b.length());
+	System.out.println(b);
+	System.out.println(a);
 		
 	}
 

@@ -10,14 +10,14 @@ public class Question4_ArmstrongNumber {
 		
 	}
 	
-	public void findArmstrongNumber(int n) {
+	public void findArmstrongNumber(int num) {
 		
-		int temp =n;
-		int r,sum=0;
-		while(n>0) {
-		r=n%10;
-		n=n/10;
-		sum=sum+r*r*r;
+		int temp =num;
+		int rem,sum=0;
+		while(num>0) {
+		rem=num%10;
+		num=num/10;
+		sum=sum+rem*rem*rem;
 		}
 		if(temp == sum) {
 			System.out.println("Armstrong");

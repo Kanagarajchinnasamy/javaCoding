@@ -16,18 +16,10 @@ public class Question1_ReverseAString {
 	}
 	public static void reverseString(String input) {
 		String reverseString ="";
-		int length = input.length();
-		for(int i=length-1;i>=0;i--) {
+		for(int i=input.length()-1;i>=0;i--) {
 			reverseString = reverseString+input.charAt(i);
 		}
-		System.out.println(input);
 		System.out.println(reverseString);
-		if(reverseString.equalsIgnoreCase(input)) {
-			System.out.println("Palindrome");
-		}
-		else {
-			System.out.println("No");
-		}
 	}
 	
 }

@@ -11,7 +11,7 @@ public class Question2_Swap2StringsWithoutThirdVariable {
 		System.out.println("Value of b:" +b);
 		System.out.println("Value of a:" +a);
 		
-		a = a+b;
+		a = a.concat(b);
 		b = a.substring(0,a.length()-b.length());
 		a= a.substring(b.length());
 		

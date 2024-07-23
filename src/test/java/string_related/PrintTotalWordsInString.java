@@ -1,4 +1,4 @@
-package Important_questions;
+package string_related;
 
 public class PrintTotalWordsInString {
 
@@ -7,15 +7,11 @@ public class PrintTotalWordsInString {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		int count =1;
 		String input = "I am a farmer son";
-		/*
-		 * String[] i = input.split(" "); System.out.println(i.length);
-		 */
-		int count = 1;
-		for (int i = 0; i < input.length()-1; i++) {
-			if(input.charAt(i)==' ' && input.charAt(i+1)!=' ') {
-				count++;
+		for(int i=0;i<input.length();i++) {
+			if(input.charAt(i)==' '&&input.charAt(i+1)!=' ') {
+			count++;	
 			}
 		}
 		System.out.println(count);
